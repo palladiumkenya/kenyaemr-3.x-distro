@@ -27,7 +27,7 @@ cp -R webapps/*.war $PACKAGE_DIR/webapps
 
 echo "Copying openmrs modules..."
 cp -R pre-build-modules/ $PACKAGE_DIR/modules
-cp -R distro/target/sdk-distro/web/modules/ $PACKAGE_DIR/modules
+cp -R package/target/sdk-distro/web/modules/ $PACKAGE_DIR/modules
 echo "Done copying openmrs modules."
 
 #prepare frontend directory
@@ -40,7 +40,7 @@ else
 fi
 
 echo "Copying openmrs frontend modules..."
-cp -R distro/target/sdk-distro/web/frontend/* $PACKAGE_DIR/frontend
+cp -R package/target/sdk-distro/web/frontend/* $PACKAGE_DIR/frontend
 
 #copy setup script
 cp setup.sh $PACKAGE_DIR
