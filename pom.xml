@@ -32,7 +32,7 @@
     </developers>
 
     <modules>
-        <module>distro</module>
+        <module>package</module>
     </modules>
 
     <properties>
