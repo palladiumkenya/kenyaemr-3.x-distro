@@ -93,8 +93,15 @@ echo
 
 echo "Copying frontend assets."
 echo
-sudo cp "${CURRENT_DIR}"/frontend/* ${FRONTEND_DIR}/
+sudo cp -R "${CURRENT_DIR}"/frontend/* ${FRONTEND_DIR}/
 echo "Finished copying frontend assets."
+echo
+
+
+echo "Copying configuration assets."
+echo
+sudo cp  -R "${CURRENT_DIR}"/configuration/* ${CONFIGURATION_DIR}/
+echo "Finished copying configuration assets."
 echo
 
 echo "Granting read permission to the modules directory: ${MODULES_DIR}."
