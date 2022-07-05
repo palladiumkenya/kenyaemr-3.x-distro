@@ -1,0 +1,175 @@
+{
+	"name": "HTS Client Tracing Form",
+	"description" : "POC HTS Client Tracing",
+      "version" : "2",
+      "published" : true,
+      "uuid":"15ed03d2-c972-11e9-a32f-2a2ae2dbcce4",
+      "retired" : false,
+       "encounter" : "HTS",
+	"pages": [
+		{
+			"label": "HTS Client tracing",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date:",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encDate"
+						},
+						{
+							"label": "Provider:",
+							"type": "encounterProvider",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encProvider "
+						},
+						{
+							"label": "Location:",
+							"type": "encounterLocation",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encLocation"
+						}
+					]
+				},
+				{
+					"label": "HTS Client Tracing",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Contact type:",
+							"type": "obs",
+							"id": "contact-type",
+							"questionOptions": {
+								"concept": "a55f9516-ddb6-47ec-b10d-cb99d1d0bd41",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "eb113c76-aef8-4890-a611-fe22ba003123",
+										"label": "Physical tracing"
+									},
+									{
+										"concept": "1650AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Phone tracing"
+									}
+								]
+							}
+						},
+						{
+							"label": "Status :",
+							"type": "obs",
+							"id": "contactStatus",
+							"questionOptions": {
+								"concept": "159811AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Not contacted"
+									},
+									{
+										"concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Contacted but not linked"
+									},
+									{
+										"concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Contacted and linked"
+									}
+								]
+							}
+						},
+						{
+							"label": "Reason not contacted :",
+							"type": "obs",
+							"id": "reasons-phone",
+							"questionOptions": {
+								"concept": "1779AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "0c112728-17b5-4342-b603-ac6dd2acf9cd",
+										"label": "Incorrect locator information"
+									},
+									{
+										"concept": "ac1fcb25-f443-4a32-b638-193f04d897a9",
+										"label": "No locator information"
+									},
+									{
+										"concept": "1567AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Calls not going through"
+									},
+									{
+										"concept": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Died"
+									},
+									{
+										"concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Others"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "isEmpty(contactStatus) && contactStatus !== '1118AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							}
+						},
+						{
+							"label": "Reason not contacted :",
+							"type": "obs",
+							"id": "reasons-physical",
+							"questionOptions": {
+								"concept": "1779AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "0c112728-17b5-4342-b603-ac6dd2acf9cd",
+										"label": "Incorrect locator information"
+									},
+									{
+										"concept": "ac1fcb25-f443-4a32-b638-193f04d897a9",
+										"label": "No locator information"
+									},
+									{
+										"concept": "1706AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Not found at home"
+									},
+									{
+										"concept": "160415AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Migrated"
+									},
+									{
+										"concept": "160034AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Died"
+									},
+									{
+										"concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Others"
+									}
+								]
+							}
+						},
+						{
+							"label": "Remarks:",
+							"type": "obs",
+							"id": "",
+							"questionOptions": {
+								"concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "textarea"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": []
+}

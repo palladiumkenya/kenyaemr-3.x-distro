@@ -1,0 +1,192 @@
+{
+	"name": "HTS Linkage Form",
+	"description" : "HTS Linkage Form",
+      "version" : "2",
+      "published" : true,
+      "uuid":"050a7f12-5c52-4cad-8834-863695af335d",
+      "retired" : false,
+       "encounter" : "HTS",
+	"pages": [
+		{
+			"label": "HTS Linkage",
+			"sections": [
+				{
+					"label": "Visit Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Date:",
+							"type": "encounterDatetime",
+							"questionOptions": {
+								"rendering": "date",
+								"weeksList": ""
+							},
+							"id": "encDate"
+						},
+						{
+							"label": "Provider:",
+							"type": "encounterProvider",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encProvider "
+						},
+						{
+							"label": "Location:",
+							"type": "encounterLocation",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							},
+							"id": "encLocation"
+						}
+					]
+				},
+				{
+					"label": "Linkage Details",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Referral to:",
+							"type": "obs",
+							"id": "referralto",
+							"questionOptions": {
+								"concept": "160481AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "164407AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other health facility"
+									},
+									{
+										"concept": "163266AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "This health facility"
+									}
+								]
+							}
+						},
+						{
+							"label": "Other Facility:",
+							"type": "obs",
+							"id": "otherfacility",
+							"questionOptions": {
+								"concept": "162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "text"
+							},
+							"hide": {
+								"hideWhenExpression": "referralto !== '164407AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							}
+						},
+						{
+							"label": "This Facility:",
+							"type": "obs",
+							"id": "thisfacility",
+							"questionOptions": {
+								"concept": "162724AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "text"
+							},
+							"hide": {
+								"hideWhenExpression": "referralto !== '163266AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							}
+						},
+						{
+							"label": "CCC Number:",
+							"type": "obs",
+							"id": "cccnumber",
+							"questionOptions": {
+								"concept": "162053AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "number",
+								"max": "10",
+								"min": "10"
+							}
+						},
+						{
+							"label": "Health Care Provider",
+							"type": "obs",
+							"id": "healthcareprovider",
+							"questionOptions": {
+								"concept": "1473AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "text"
+							}
+						},
+						{
+							"label": "Cadre of Health Care Worker:",
+							"type": "obs",
+							"id": "hcwcadre",
+							"questionOptions": {
+								"concept": "162577AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "5488AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Adherence Counselling"
+									},
+									{
+										"concept": "1574AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Clinical Officer/Doctor"
+									},
+									{
+										"concept": "1540AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Employee"
+									},
+									{
+										"concept": "1577AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Nurse"
+									},
+									{
+										"concept": "1555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Community Health Care Worker"
+									},
+									{
+										"concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+										"label": "Other"
+									}
+								]
+							}
+						},
+						{
+							"label": "Specify :",
+							"type": "obs",
+							"id": "othercadre",
+							"questionOptions": {
+								"concept": "160632AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "text"
+							},
+							"hide": {
+								"hideWhenExpression": "hcwcadre !== '5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+							}
+						},
+						{
+							"label": "Date Enrolled:",
+							"type": "obs",
+							"id": "dateenrolled",
+							"questionOptions": {
+								"concept": "160555AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "date"
+							}
+						},
+						{
+							"label": "ART Start Date:",
+							"type": "obs",
+							"id": "artstartdate",
+							"questionOptions": {
+								"concept": "159599AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "date"
+							}
+						},
+						{
+							"label": "Remarks:",
+							"type": "obs",
+							"id": "remarks",
+							"questionOptions": {
+								"concept": "163042AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+								"rendering": "textarea"
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"processor": "EncounterFormProcessor",
+	"referencedForms": []
+}

@@ -21,7 +21,6 @@
         <!-- track module versions
              we do so here so that we can utilise Maven to track updates, etc. -->
         <openmrs.version>2.3.3</openmrs.version>
-        <initializer.version>2.3.0</initializer.version>
         <fhir2.version>1.4.0</fhir2.version>
         <webservices.rest.version>2.36.0</webservices.rest.version>
 
@@ -64,12 +63,6 @@
         </dependency>
 
         <!-- Module dependencies -->
-        <dependency>
-            <groupId>org.openmrs.module</groupId>
-            <artifactId>initializer-omod</artifactId>
-            <version>${initializer.version}</version>
-            <scope>provided</scope>
-        </dependency>
         <dependency>
             <groupId>org.openmrs.module</groupId>
             <artifactId>fhir2-omod</artifactId>
