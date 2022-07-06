@@ -58,3 +58,6 @@ cp -R configuration/* $PACKAGE_DIR/configuration
 
 #copy setup script
 cp setup.sh $PACKAGE_DIR
+
+#zip the output package directory
+
