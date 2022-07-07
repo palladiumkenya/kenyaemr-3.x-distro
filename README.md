@@ -3,7 +3,7 @@
  > This project is inspired by the new OpenMRS reference application packaging [here](https://github.com/openmrs/openmrs-distro-referenceapplication/tree/3.x)
 
 ## Pre-requisites
-  - Installed and configured tomcat server
+  - Install and configure tomcat server
   - MySQL Server
 
 ## Quick Start
