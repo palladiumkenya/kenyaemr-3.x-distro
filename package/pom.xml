@@ -30,30 +30,29 @@
         <spa.login.version>4.0.1-pre.238</spa.login.version>
         <spa.primary.navigation.version>4.0.1-pre.238</spa.primary.navigation.version>
         <spa.offline.tools.version>4.0.1-pre.238</spa.offline.tools.version>
-        <spa.active.visits.version>4.0.1-pre.397</spa.active.visits.version>
-        <spa.outpatient.version>4.0.1-pre.397</spa.outpatient.version>
-        <spa.form.entry.version>4.0.1-pre.278</spa.form.entry.version>
+        <spa.active.visits.version>4.0.1-pre.419</spa.active.visits.version>
+        <spa.form.entry.version>4.0.1-pre.297</spa.form.entry.version>
         <spa.home.version>4.0.1-pre.105</spa.home.version>
-        <spa.patient.allergies.version>4.0.1-pre.278</spa.patient.allergies.version>
-        <spa.patient.appointments.version>4.0.1-pre.278</spa.patient.appointments.version>
-        <spa.patient.attachments.version>4.0.1-pre.278</spa.patient.attachments.version>
-        <spa.patient.banner.version>4.0.1-pre.278</spa.patient.banner.version>
-        <spa.patient.biometrics.version>4.0.1-pre.278</spa.patient.biometrics.version>
-        <spa.patient.chart.version>4.0.1-pre.278</spa.patient.chart.version>
-        <spa.patient.conditions.version>4.0.1-pre.278</spa.patient.conditions.version>
-        <spa.patient.forms.version>4.0.1-pre.278</spa.patient.forms.version>
-        <spa.patient.immunizations.version>4.0.1-pre.278</spa.patient.immunizations.version>
-        <spa.patient.list.version>4.0.1-pre.397</spa.patient.list.version>
-        <spa.patient.medications.version>4.0.1-pre.278</spa.patient.medications.version>
-        <spa.patient.notes.version>4.0.1-pre.278</spa.patient.notes.version>
-        <spa.patient.programs.version>4.0.1-pre.278</spa.patient.programs.version>
-        <spa.patient.registration.version>4.0.1-pre.397</spa.patient.registration.version>
-        <spa.patient.search.version>4.0.1-pre.397</spa.patient.search.version>
-        <spa.test.results.version>4.0.1-pre.278</spa.test.results.version>
-        <spa.patient.vitals.version>4.0.1-pre.278</spa.patient.vitals.version>
+        <spa.patient.allergies.version>4.0.1-pre.297</spa.patient.allergies.version>
+        <spa.patient.appointments.version>4.0.1-pre.297</spa.patient.appointments.version>
+        <spa.patient.attachments.version>4.0.1-pre.297</spa.patient.attachments.version>
+        <spa.patient.banner.version>4.0.1-pre.297</spa.patient.banner.version>
+        <spa.patient.biometrics.version>4.0.1-pre.297</spa.patient.biometrics.version>
+        <spa.patient.chart.version>4.0.1-pre.297</spa.patient.chart.version>
+        <spa.patient.conditions.version>4.0.1-pre.297</spa.patient.conditions.version>
+        <spa.patient.forms.version>4.0.1-pre.297</spa.patient.forms.version>
+        <spa.patient.immunizations.version>4.0.1-pre.297</spa.patient.immunizations.version>
+        <spa.patient.list.version>4.0.1-pre.419</spa.patient.list.version>
+        <spa.patient.medications.version>4.0.1-pre.297</spa.patient.medications.version>
+        <spa.patient.notes.version>4.0.1-pre.297</spa.patient.notes.version>
+        <spa.patient.programs.version>4.0.1-pre.297</spa.patient.programs.version>
+        <spa.patient.registration.version>4.0.1-pre.419</spa.patient.registration.version>
+        <spa.patient.search.version>4.0.1-pre.419</spa.patient.search.version>
+        <spa.test.results.version>4.0.1-pre.297</spa.test.results.version>
+        <spa.patient.vitals.version>4.0.1-pre.297</spa.patient.vitals.version>
         <spa.patient.flags.version>3.1.1-pre.2</spa.patient.flags.version>
-        <spa.outpatient.version>4.0.1-pre.397</spa.outpatient.version>
-        <spa.appointments.version>4.0.1-pre.397</spa.appointments.version>
+        <spa.outpatient.version>4.0.1-pre.419</spa.outpatient.version>
+        <spa.appointments.version>4.0.1-pre.419</spa.appointments.version>
         <spa.fast.data.entry.version>1.0.0-pre.59</spa.fast.data.entry.version>
     </properties>
 
